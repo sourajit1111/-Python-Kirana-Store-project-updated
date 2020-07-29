@@ -1,0 +1,18 @@
+sum=0
+dic={"RICE":30,"ATTA":25,"SUGAR":20,"TEA":50,"SALT":12,"DAL":30,"SPICES":50,"MILK":35,"HONEY":50,"SOAP":10,
+     "SHAMPOO":50}
+print(f'choose from the follow list {dic}')
+while(True):
+    item = input("Enter your items \n").upper()
+
+
+    if (item != 'Y'):
+        quan = int(input("Enter Quantity \n"))
+
+        sum = sum +((dic[item])*quan)
+
+        print(f"Cart price INR {sum}")
+
+    else:
+        print(f"Your total bill is INR {sum}")
+        break
